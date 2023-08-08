@@ -4,6 +4,7 @@ from threading import Thread
 import threading
 from time import ctime
 
+
 class clientHandler(Thread):
     def __init__(self, client, record, address):
         Thread.__init__(self)
@@ -42,7 +43,7 @@ class clientHandler(Thread):
                 self.broadCastingMesage(self.client, message)
                 threadLock.release()
 
-HOST = 'localhost'
+HOST = '192.168.141.1'
 PORT = 5000
 BUFFER_SIZE = 4096
 ADDRESS = (HOST, PORT) 

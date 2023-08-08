@@ -1,6 +1,6 @@
 from socket import *
 
-HOST = 'localhost'
+HOST = '192.168.141.1'
 PORT = 5000
 BUFFER_SIZE = 4096
 ADDRESS = (HOST, PORT)
